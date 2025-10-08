@@ -44,6 +44,17 @@ const TableFooter: React.FC<TableFooterProps> = ({
           onPageChange={onPageChange}
           onRowsPerPageChange={onRowsPerPageChange}
           className="table-footer-pagination"
+          sx={{
+            "& .MuiTablePagination-selectLabel, & .MuiTablePagination-displayedRows":
+              {
+                color: "#212529",
+                fontWeight: 500,
+              },
+            "& .MuiTablePagination-select": {
+              color: "#212529",
+              fontWeight: 500,
+            },
+          }}
         />
       </Box>
     </Fade>

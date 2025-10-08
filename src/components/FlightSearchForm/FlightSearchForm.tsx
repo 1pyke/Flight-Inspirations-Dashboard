@@ -84,7 +84,7 @@ const FlightSearchForm = ({
         <Box className="flightsearch-header-box">
           <Typography
             variant="h1"
-            component="h1"
+            component="h2"
             className="flightsearch-title"
           >
             Your Journey Starts Here
@@ -133,7 +133,7 @@ const FlightSearchForm = ({
             startIcon={<Search className="flightsearch-submit-icon" />}
             className="flightsearch-submit-btn"
           >
-            {loading ? "Searching..." : "Search"}
+            {loading ? "Searching" : "Search"}
           </Button>
         </Box>
       </form>

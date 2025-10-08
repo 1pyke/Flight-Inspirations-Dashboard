@@ -20,21 +20,26 @@ const StyledDatePicker = styled(DatePicker)({
   },
 });
 
-export const DateCell = memo(({ value, onChange }: DateCellProps) => {
-  return (
-    <StyledDatePicker
-      value={dayjs(value)}
-      onChange={(newValue) => {
-        if (newValue) {
-          onChange(newValue.format("M/D/YYYY"));
-        }
-      }}
-      slotProps={{
-        textField: {
-          variant: "standard",
-          fullWidth: true,
-        },
-      }}
-    />
-  );
-});
+export const DateCell = memo(
+  ({ value, onChange, ariaLabel }: DateCellProps) => {
+    return (
+      <StyledDatePicker
+        value={dayjs(value)}
+        onChange={(newValue) => {
+          if (newValue) {
+            onChange(newValue.format("M/D/YYYY"));
+          }
+        }}
+        slotProps={{
+          textField: {
+            variant: "standard",
+            fullWidth: true,
+            inputProps: {
+              "aria-label": ariaLabel,
+            },
+          },
+        }}
+      />
+    );
+  }
+);

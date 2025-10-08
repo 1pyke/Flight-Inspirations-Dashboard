@@ -121,7 +121,7 @@ const FlightTable = ({
       <Container maxWidth="xl" className="table-container-root">
         <Box className="table-header-box">
           <Box className="table-header-title-box">
-            <Typography variant="h4" component="h2" className="table-title">
+            <Typography variant="h3" component="h3" className="table-title">
               Flight Results :
             </Typography>
           </Box>
@@ -129,9 +129,11 @@ const FlightTable = ({
           {data.length > 0 && (
             <Box className="table-chip-box">
               <Typography
-                variant="h4"
+                variant="body1"
+                component="p"
                 color="text.secondary"
                 className="table-currency-text"
+                sx={{ fontSize: "1.25rem", fontWeight: 600 }}
               >
                 {`${data.length} Flight`}
               </Typography>
@@ -197,6 +199,9 @@ const FlightTable = ({
                                         column
                                       )}`}
                                       onChange={handleSearchInputChange(column)}
+                                      aria-label={`Search ${formatColumnHeaderText(
+                                        column
+                                      )}`}
                                     />
                                   </TableHeader>
                                 );
@@ -268,6 +273,9 @@ const FlightTable = ({
                                         row.originalIndex,
                                         column
                                       )}
+                                      ariaLabel={`${formatColumnHeaderText(
+                                        column
+                                      )} for row ${rowIndex + 1}`}
                                     />
                                   ) : (
                                     <InputCell
@@ -280,6 +288,9 @@ const FlightTable = ({
                                         row.originalIndex,
                                         column
                                       )}
+                                      aria-label={`${formatColumnHeaderText(
+                                        column
+                                      )} for row ${rowIndex + 1}`}
                                     />
                                   )}
                                 </TableCell>

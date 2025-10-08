@@ -36,9 +36,15 @@
 }
 
 .header-subtitle {
-  color: var(--color-text-secondary) !important;
+  color: rgba(255, 255, 255, 0.85) !important;
   font-size: 0.75rem !important;
   font-weight: 500 !important;
   letter-spacing: 0.5px !important;
   text-transform: uppercase !important;
+}
+
+@media (max-width: 1437px) {
+  .header-icon-box {
+    margin-left: 22px;
+  }
 }

@@ -20,19 +20,19 @@ export const StyledTable = styled.table`
 `;
 
 export const TableHeader = styled.th`
-  background: var(--color-brand-teal);
+  background: #007a8c;
   padding: 16px 20px;
   text-align: left;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 0.875rem;
-  color: var(--color-primary-contrast);
+  color: #ffffff;
   border-bottom: 2px solid var(--color-grey-200);
   cursor: grab;
   position: relative;
   transition: all 0.3s ease;
 
   &:hover {
-    background: var(--color-brand-teal-hover);
+    background: #006070;
   }
 
   &:active {
@@ -102,7 +102,7 @@ export const SearchInput = styled.input`
   }
 
   &::placeholder {
-    color: var(--color-grey-400);
+    color: #6c757d;
     font-size: 0.8rem;
   }
 `;
@@ -166,6 +166,6 @@ export const InputCell = styled.input`
   }
 
   &::placeholder {
-    color: var(--color-grey-400);
+    color: #6c757d;
   }
 `;
