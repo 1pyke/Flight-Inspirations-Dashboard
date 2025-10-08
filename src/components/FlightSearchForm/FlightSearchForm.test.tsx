@@ -12,7 +12,7 @@ describe("FlightSearchForm", () => {
         <FlightSearchForm onSearch={mockOnSearch} searchParams={searchParams} />
       </Provider>
     );
-    expect(screen.getByLabelText(/origin city code/i)).toBeInTheDocument();
-    expect(screen.getByText(/find your perfect flight/i)).toBeInTheDocument();
+    expect(screen.getByLabelText(/city code/i)).toBeInTheDocument();
+    expect(screen.getByText(/your journey starts here/i)).toBeInTheDocument();
   });
 });

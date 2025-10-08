@@ -7,13 +7,13 @@ describe("Flight Inspirations App", () => {
 
   it("shows the header", () => {
     cy.contains("Flight Inspirations").should("be.visible");
-    cy.contains("Discover • Explore • Fly").should("be.visible");
+    cy.contains("Find your next destination. Fly smarter.").should("be.visible");
   });
 
   describe("Flight Search Form", () => {
     it("validates origin input", () => {
       cy.get("input#origin").clear().blur();
-      cy.contains("Origin city code is required").should("be.visible");
+      cy.contains("City Code Is Required").should("be.visible");
       cy.get("input#origin").type("MA").blur();
       cy.contains("origin must be 3 characters").should("be.visible");
       cy.get("input#origin").clear().type("MAD").blur();
@@ -58,7 +58,7 @@ describe("Flight Inspirations App", () => {
       cy.get("input#origin").clear().type("MAD");
       cy.get("form").submit();
       cy.wait("@getFlightsFail");
-      cy.contains("Failed to search flights").should("be.visible");
+      cy.contains("Sorry, we couldn't complete your search").should("be.visible");
     });
   });
 
@@ -161,9 +161,9 @@ describe("Flight Inspirations App", () => {
         .first()
         .clear()
         .type("Test City");
-      cy.contains("unsaved changes").should("be.visible");
+      cy.contains("Unsaved Changes").should("be.visible");
       cy.contains("Save Changes").should("not.be.disabled").click();
-      cy.contains("unsaved changes").should("not.exist");
+      cy.contains("Unsaved Changes").should("not.exist");
     });
 
     it("cannot save with empty cells", () => {
@@ -192,8 +192,8 @@ describe("Flight Inspirations App", () => {
       cy.get("form").submit();
       cy.wait("@getFlights");
       cy.get("tbody tr").first().find("input").first().clear();
-      cy.contains("Fill All Cells").should("be.disabled");
-      cy.contains("Please fill all empty cells before saving").should(
+      cy.contains("Fill Cells").should("be.disabled");
+      cy.contains("All fields are required. Please fill them in before saving").should(
         "be.visible"
       );
     });
