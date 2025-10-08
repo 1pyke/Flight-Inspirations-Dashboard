@@ -638,7 +638,7 @@ export function getCachedData<T>(
   <p>Made with ❤️ by the Flight Inspirations Team</p>
   <p>
     <a href="https://flight-inspirations-dashboard.vercel.app/">Live Demo</a> •
-    <a href="https://github.com/1pyke/Flight-Inspirations-Dashboard/issues">Report Bug</a> •
-    <a href="https://github.com/1pyke/Flight-Inspirations-Dashboard/issues">Request Feature</a>
+    <a href="https://github.com/1pyke/Flight-Inspirations-Dashboard">Report Bug</a> •
+    <a href="https://github.com/1pyke/Flight-Inspirations-Dashboard">Request Feature</a>
   </p>
 </div>
