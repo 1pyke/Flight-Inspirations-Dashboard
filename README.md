@@ -9,7 +9,7 @@
 
 ## Live Demo
 
-🚀 [Flight Inspirations App Demo](https://flight-inspirations-orpin.vercel.app/)
+🚀 [Flight Inspirations App Demo](https://flight-inspirations-dashboard.vercel.app/)
 
 ## Table of Contents
 
@@ -254,7 +254,7 @@ The application follows a **layered architecture** pattern with clear separation
 ## Project Structure
 
 ```
-Flight-Inspirations/
+Flight-Inspirations-Dashboard/
 ├── public/                        # Static assets
 │   ├── favicon.ico
 │   ├── flight-inspirations-logo.svg
@@ -342,8 +342,8 @@ Flight-Inspirations/
 1. **Clone the repository**
 
 ```bash
-git clone https://github.com/1pyke/Flight-Inspirations.git
-cd Flight-Inspirations
+git clone https://github.com/1pyke/Flight-Inspirations-Dashboard.git
+cd Flight-Inspirations-Dashboard
 ```
 
 2. **Install dependencies**
@@ -626,7 +626,7 @@ export function getCachedData<T>(
 <div align="center">
   <p>Made with ❤️ by the Flight Inspirations Team</p>
   <p>
-    <a href="https://flight-inspirations-orpin.vercel.app/">Live Demo</a> •
+    <a href="https://flight-inspirations-dashboard.vercel.app/">Live Demo</a> •
     <a href="https://github.com/1pyke/Flight-Inspirations/issues">Report Bug</a> •
     <a href="https://github.com/1pyke/Flight-Inspirations/issues">Request Feature</a>
   </p>
