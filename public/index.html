@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#003143" />
+    <meta
+      name="description"
+      content="Book your flights effortlessly with Flight Inspirations. Explore top destinations, compare airlines, and enjoy exclusive deals for your next adventure."
+    />
+    <meta
+      name="keywords"
+      content="flight booking, travel deals, airline tickets, vacation planning, cheap flights, top destinations"
+    />
+    <meta name="author" content="Flight Inspirations Team" />
+
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqrxhwPOyqGtORkc07QxnIzUPe3HgL0DfYlA&s"
+    />
+
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta name="apple-mobile-web-app-title" content="Flight Inspirations" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+
+    <title>Flight Inspirations | Find Your Perfect Flight</title>
+
+    <style>
+      .app-loading-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #f8fafc;
+        z-index: 9999;
+        transition: opacity 0.3s ease;
+      }
+
+      .app-loading-content {
+        text-align: center;
+      }
+
+      .app-loading-spinner {
+        width: 60px;
+        height: 60px;
+        border: 4px solid #c4dfe3;
+        border-radius: 50%;
+        border-top-color: #0c9ab0;
+        animation: spin 1s linear infinite;
+        margin: 0 auto 20px;
+      }
+
+      .app-loading-title {
+        color: #2d3748;
+        margin-bottom: 8px;
+      }
+
+      .app-loading-text {
+        color: #718096;
+      }
+
+      @keyframes spin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <noscript>
+      <div class="noscript-warning">
+        <h1>JavaScript is Disabled</h1>
+        <p>
+          This application requires JavaScript to function properly. Please
+          enable JavaScript in your browser settings.
+        </p>
+        <p>
+          For help enabling JavaScript, please visit
+          <a href="https://www.enable-javascript.com/">enable-javascript.com</a>
+        </p>
+      </div>
+    </noscript>
+
+    <div id="root"></div>
+    <div id="app-loading" class="app-loading-overlay">
+      <div class="app-loading-content">
+        <div class="app-loading-spinner"></div>
+        <h2 class="app-loading-title">Loading Flight Inspirations</h2>
+        <p class="app-loading-text">
+          Sit tight! We're fetching the best flight options and deals just for
+          you.
+        </p>
+      </div>
+    </div>
+
+    <script>
+      window.addEventListener("load", function () {
+        var loading = document.getElementById("app-loading");
+        if (loading) {
+          loading.style.opacity = "0";
+          setTimeout(function () {
+            loading.style.display = "none";
+          }, 300);
+        }
+      });
+    </script>
+  </body>
+</html>

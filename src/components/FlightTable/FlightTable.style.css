@@ -1,0 +1,58 @@
+.table-container-root {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.table-header-box {
+  text-align: center;
+  display: flex;
+}
+
+.table-header-title-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.table-title {
+  font-weight: 700 !important;
+  color: var(--color-brand-navy) !important;
+}
+
+.table-chip-box {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-left: 8px;
+  justify-content: space-between;
+  width: 100%;
+  flex: 1;
+}
+
+.table-chip {
+  border-radius: 16px !important;
+}
+
+.table-chip .MuiChip-label {
+  font-weight: 600 !important;
+}
+
+.table-empty-box {
+  padding: 32px 0;
+  text-align: center;
+}
+
+.table-content-box {
+  min-height: 400px;
+}
+
+.table-fixed-layout {
+  table-layout: fixed;
+  width: 100%;
+}
+
+.table-header-row {
+  display: table-row;
+  width: 100%;
+}

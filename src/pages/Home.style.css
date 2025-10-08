@@ -1,0 +1,7 @@
+.home-content-wrapper {
+    min-height: 400px;
+}
+
+.home-content-wrapper.loading {
+    min-height: 300px;
+}

@@ -1,0 +1,143 @@
+.flightsearch-container {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.flightsearch-header-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 32px;
+  text-align: center;
+  animation: fadeIn 0.8s ease-out;
+}
+
+.flightsearch-title {
+  padding-top: 18px;
+  font-weight: 700 !important;
+  animation: fadeIn 0.8s ease-out;
+  color: var(--color-brand-navy) !important;
+}
+
+.flightsearch-description {
+  text-align: center;
+  color: var(--color-text-secondary) !important;
+  margin-bottom: 32px;
+  max-width: 600px;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  min-height: 100px;
+}
+
+.flightsearch-form-fields {
+  display: flex;
+  gap: 24px;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+@media (max-width: 600px) {
+  .flightsearch-form-fields {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .flightsearch-submit-btn {
+    width: 100%;
+  }
+}
+
+.flightsearch-input .MuiOutlinedInput-root {
+  background-color: var(--color-white);
+}
+
+.flightsearch-input .MuiOutlinedInput-root fieldset {
+  border-color: var(--color-grey-200);
+}
+
+.flightsearch-input .MuiOutlinedInput-root:hover fieldset {
+  border-color: var(--color-brand-teal);
+}
+
+.flightsearch-input .MuiOutlinedInput-root.Mui-focused fieldset {
+  border-color: var(--color-brand-teal);
+}
+
+.flightsearch-input .MuiInputLabel-root.Mui-focused {
+  color: var(--color-brand-teal);
+}
+
+.flightsearch-input .MuiOutlinedInput-root.Mui-focused {
+  box-shadow: 0 0 0 3px var(--color-brand-teal);
+  outline: none;
+}
+
+.MuiSvgIcon-root {
+  color: var(--color-brand-teal);
+}
+
+.MuiPickersDay-root.Mui-selected {
+  background-color: var(--color-brand-teal) !important;
+  color: var(--color-white) !important;
+}
+
+.MuiPickersDay-root.Mui-selected:hover {
+  background-color: var(--color-brand-teal-active) !important;
+}
+
+.MuiPickersDay-today {
+  border: 1px solid var(--color-brand-teal) !important;
+}
+
+.MuiPickersCalendarHeader-label,
+.MuiPickersArrowSwitcher-button .MuiSvgIcon-root {
+  color: var(--color-brand-teal) !important;
+}
+
+.MuiOutlinedInput-root.Mui-focused {
+  box-shadow: var(--shadow-focus) !important;
+}
+
+.MuiPopover-paper,
+.MuiDialog-paper {
+  border: 1px solid var(--color-border-teal-alpha);
+  border-radius: 12px;
+}
+
+
+.flightsearch-submit-btn {
+  min-width: 140px !important;
+  min-height: 56px;
+  font-size: 1rem !important;
+  font-weight: 600 !important;
+  background: var(--gradient-teal-button) !important;
+  transition: all 0.3s ease;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.flightsearch-submit-btn:hover:not(:disabled) {
+  background: var(--gradient-teal-button-hover) !important;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+.flightsearch-submit-btn:disabled {
+  background: var(--color-grey-300) !important;
+  color: var(--color-grey-500) !important;
+}
+
+.flightsearch-submit-icon {
+  font-size: 24px !important;
+  color: var(--color-white) !important;
+}
+
+.flightsearch-error-box {
+  margin-top: 24px;
+  padding: 16px;
+  border-radius: 8px;
+  background: var(--color-error-light);
+  border: 1px solid var(--color-error-main);
+  text-align: center;
+}

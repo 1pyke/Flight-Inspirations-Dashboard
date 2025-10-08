@@ -1,0 +1,156 @@
+:root {
+  /* ========================================
+     PRIMARY BRAND COLORS
+     ======================================== */
+  --color-brand-teal: #0e9ab0;
+  --color-brand-teal-hover: #008297;
+  --color-brand-teal-light: #16b7cf;
+  --color-brand-teal-active: #0c879b;
+  --color-brand-teal-dark: #0b8295;
+  --color-brand-teal-darker: #009eb6;
+  --color-brand-navy: #003143;
+
+  /* ========================================
+     FLIGHT INSPIRATIONS THEME COLORS
+     ======================================== */
+  --color-flight-red: #ef4550;
+  --color-flight-teal: #0c9ab0;
+  --color-flight-navy: #003143;
+
+  /* ========================================
+     PRIMARY COLORS (Material UI)
+     ======================================== */
+  --color-primary-main: #3a86ff;
+  --color-primary-light: #70a9ff;
+  --color-primary-dark: #0061f2;
+  --color-primary-darker: #004fc4;
+  --color-primary-contrast: #ffffff;
+  --color-primary-alpha-light: rgba(107, 115, 255, 0.05);
+  --color-primary-alpha-medium: rgba(107, 115, 255, 0.02);
+  --color-primary-shadow: #6b73ff20;
+
+  /* ========================================
+     SECONDARY COLORS
+     ======================================== */
+  --color-secondary-main: #ff6b6b;
+  --color-secondary-light: #ff9e9e;
+  --color-secondary-dark: #e63946;
+  --color-secondary-darker: #d90429;
+  --color-secondary-contrast: #ffffff;
+
+  /* ========================================
+     BACKGROUND COLORS
+     ======================================== */
+  --color-bg-default: #f8f9fa;
+  --color-bg-paper: #ffffff;
+  --color-bg-loading: #f8fafc;
+  --gradient-bg-main: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  --gradient-bg-error: linear-gradient(135deg, rgba(231, 76, 60, 0.1) 0%, rgba(241, 148, 138, 0.1) 100%);
+
+  /* ========================================
+     TEXT COLORS
+     ======================================== */
+  --color-text-primary: #212529;
+  --color-text-secondary: #6c757d;
+  --color-text-heading: #2d3748;
+  --color-text-body: #718096;
+
+  /* ========================================
+     SUCCESS, WARNING, ERROR, INFO
+     ======================================== */
+  --color-success-main: #2ecc71;
+  --color-success-light: #7ed6a5;
+  --color-success-dark: #27ae60;
+
+  --color-warning-main: #f39c12;
+  --color-warning-light: #f8c471;
+  --color-warning-dark: #d35400;
+
+  --color-error-main: #e74c3c;
+  --color-error-light: #f1948a;
+  --color-error-dark: #c0392b;
+  --color-error-red: #f44336;
+  --color-error-red-dark: #d32f2f;
+
+  --color-info-main: #00b4d8;
+  --color-info-light: #90e0ef;
+  --color-info-dark: #0077b6;
+
+  /* ========================================
+     GREY SCALE
+     ======================================== */
+  --color-grey-50: #f8f9fa;
+  --color-grey-100: #e9ecef;
+  --color-grey-200: #dee2e6;
+  --color-grey-300: #ced4da;
+  --color-grey-400: #adb5bd;
+  --color-grey-500: #6c757d;
+  --color-grey-600: #495057;
+  --color-grey-700: #343a40;
+  --color-grey-800: #212529;
+  --color-grey-900: #111111;
+  --color-grey-disabled: #cccccc;
+  --color-grey-disabled-dark: #b3b3b3;
+  --color-grey-disabled-text: #666666;
+
+  /* ========================================
+     SCROLLBAR COLORS
+     ======================================== */
+  --color-scrollbar-thumb: rgba(128, 128, 128, 0.6);
+  --color-scrollbar-thumb-hover: rgba(128, 128, 128, 0.9);
+
+  /* ========================================
+     CELL STATES
+     ======================================== */
+  --color-cell-edited: #fff9c3;
+  --color-cell-emptied: #fabebe;
+
+  /* ========================================
+     SHADOWS
+     ======================================== */
+  --shadow-xs: 0 2px 8px rgba(0, 0, 0, 0.05);
+  --shadow-sm: 0 4px 12px rgba(58, 134, 255, 0.15);
+  --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 6px 20px rgba(58, 134, 255, 0.25);
+  --shadow-xl: 0 8px 40px rgba(0, 0, 0, 0.12);
+  --shadow-header: 0 2px 20px rgba(0, 0, 0, 0.05);
+  --shadow-header-icon: 0 4px 12px rgba(58, 134, 255, 0.3);
+  --shadow-footer: 0 8px 32px rgba(31, 38, 135, 0.15);
+  --shadow-chip: 0 2px 5px rgba(0, 0, 0, 0.1);
+  --shadow-chip-hover: 0 4px 8px rgba(0, 0, 0, 0.15);
+  --shadow-focus: 0 0 0 3px rgba(14, 154, 176, 0.25);
+
+  /* ========================================
+     GRADIENTS
+     ======================================== */
+  --gradient-primary: linear-gradient(135deg, #3a86ff 0%, #0061f2 100%);
+  --gradient-primary-hover: linear-gradient(135deg, #0061f2 0%, #004fc4 100%);
+  --gradient-secondary: linear-gradient(135deg, #ff6b6b 0%, #e63946 100%);
+  --gradient-secondary-hover: linear-gradient(135deg, #e63946 0%, #d90429 100%);
+  --gradient-accent: linear-gradient(135deg, #3a86ff 0%, #ff6b6b 100%);
+  --gradient-teal: linear-gradient(135deg, #0e9ab0 0%, #16b7cf 100%);
+  --gradient-teal-hover: linear-gradient(135deg, #0b8295 0%, #0e9ab0 100%);
+  --gradient-teal-button: linear-gradient(135deg, #0e9aaf 0%, #0e9aaf 100%);
+  --gradient-teal-button-hover: linear-gradient(135deg, #008297 0%, #009eb6 100%);
+  --gradient-disabled: linear-gradient(135deg, #cccccc 0%, #b3b3b3 100%);
+  --gradient-text-white: linear-gradient(135deg, #fff 0%, #ffff 100%);
+  --gradient-spinner: conic-gradient(#ef4550 0deg 120deg, #0c9ab0 120deg 240deg, #003143 240deg 360deg);
+
+  /* ========================================
+     SELECTION & HIGHLIGHT
+     ======================================== */
+  --color-selection: rgba(58, 134, 255, 0.2);
+
+  /* ========================================
+     BORDERS & TRANSPARENCY
+     ======================================== */
+  --color-border-white-alpha: rgba(255, 255, 255, 0.18);
+  --color-border-teal-alpha: rgba(14, 154, 176, 0.4);
+
+  /* ========================================
+     BASIC COLORS
+     ======================================== */
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-transparent: transparent;
+}
